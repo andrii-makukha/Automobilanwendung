@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "cars": "Cars",
+        "contact": "Contact"
+    },
+    "home": {
+        "welcome": "Welcome to our car showroom!",
+        "intro1": "We are pleased to present our wide range of cars to suit your every need. From stylish city cars to powerful SUVs - we have it all!",
+        "intro2": "Our team of professionals is always ready to help you with your choice and provide all the necessary information so that you can make the best decision. Join us on a journey through the world of cars!",
+        "whyUs": "Why choose us?",
+        "reason1": "Large selection of cars for every taste and budget.",
+        "reason2": "Competitive prices and special offers.",
+        "reason3": "Professional advice and support at all stages of purchase.",
+        "reason4": "High quality customer service.",
+        "ctaStart": "Ready to find your perfect car? Check out our ",
+        "ctaLink": "cars",
+        "ctaEnd": " and find out more!"
+    },
+    "language": "Language"
+}

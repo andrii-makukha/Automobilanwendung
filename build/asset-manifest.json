@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46a66e66.css",
+    "main.js": "/static/js/main.4aea9aec.js",
+    "static/js/734.05eb5de0.chunk.js": "/static/js/734.05eb5de0.chunk.js",
+    "static/media/lamborghini-aventador.jpg": "/static/media/lamborghini-aventador.98366bc04f14c763b1a6.jpg",
+    "static/media/ford-mustang.jpg": "/static/media/ford-mustang.adfcc1d193419d250e71.jpg",
+    "static/media/bmw-m3.jpg": "/static/media/bmw-m3.a93ec84349a46f2cb195.jpg",
+    "static/media/volkswagen-golf.jpg": "/static/media/volkswagen-golf.b26c7fc1652d62f5cad8.jpg",
+    "static/media/kia-stinger.jpg": "/static/media/kia-stinger.aaccb3a266d1e876856a.jpg",
+    "static/media/nissan-gtr.jpg": "/static/media/nissan-gtr.cd7bb6b1363bb902ccde.jpg",
+    "static/media/mazda-mx5.jpg": "/static/media/mazda-mx5.cdd3770655ccad47cb4f.jpg",
+    "static/media/hyundai-elantra.jpg": "/static/media/hyundai-elantra.5468b09b03bac2cf353f.jpg",
+    "static/media/chevrolet-corvette.jpg": "/static/media/chevrolet-corvette.662528b2186415172c76.jpg",
+    "static/media/mercedes-benz-s-class.jpg": "/static/media/mercedes-benz-s-class.920d6b44f25d30db9730.jpg",
+    "static/media/tesla-model-s.jpg": "/static/media/tesla-model-s.c30d10153a0901863c3a.jpg",
+    "static/media/subaru-wrx.jpg": "/static/media/subaru-wrx.115ef8749d5530baed58.jpg",
+    "static/media/ferrari-488.jpg": "/static/media/ferrari-488.430c997fd4039116dd92.jpg",
+    "static/media/audi-a8.jpg": "/static/media/audi-a8.fd417178fec6383164e0.jpg",
+    "static/media/toyota-camry.jpg": "/static/media/toyota-camry.51aebfc14188d229977d.jpg",
+    "static/media/honda-accord.jpg": "/static/media/honda-accord.08359c1f67d5e1d82259.jpg",
+    "static/media/volvo-xc90.jpg": "/static/media/volvo-xc90.44956edeaa3ea25a1ea2.jpg",
+    "static/media/porsche-911.jpg": "/static/media/porsche-911.57305e55f6f9c35a5526.jpg",
+    "index.html": "/index.html",
+    "main.46a66e66.css.map": "/static/css/main.46a66e66.css.map",
+    "main.4aea9aec.js.map": "/static/js/main.4aea9aec.js.map",
+    "734.05eb5de0.chunk.js.map": "/static/js/734.05eb5de0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46a66e66.css",
+    "static/js/main.4aea9aec.js"
+  ]
+}

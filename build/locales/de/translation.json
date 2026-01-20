@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "home": "Startseite",
+        "about": "Über uns",
+        "cars": "Autos",
+        "contact": "Kontakt"
+    },
+    "home": {
+        "welcome": "Willkommen in unserem Autohaus!",
+        "intro1": "Wir freuen uns, Ihnen unser breites Angebot an Autos präsentieren zu können, das alle Ihre Bedürfnisse erfüllt. Von stilvollen Stadtautos bis hin zu leistungsstarken SUVs – wir haben alles!",
+        "intro2": "Unser Team von Profis ist immer bereit, Ihnen bei der Auswahl zu helfen und alle notwendigen Informationen bereitzustellen, damit Sie die beste Entscheidung treffen können. Begleiten Sie uns auf einer Reise durch die Welt der Autos!",
+        "whyUs": "Warum uns wählen?",
+        "reason1": "Große Auswahl an Autos für jeden Geschmack und jedes Budget.",
+        "reason2": "Wettbewerbsfähige Preise und Sonderangebote.",
+        "reason3": "Professionelle Beratung und Unterstützung in allen Phasen des Kaufs.",
+        "reason4": "Hohe Qualität des Kundenservice.",
+        "ctaStart": "Bereit, Ihr perfektes Auto zu finden? Schauen Sie sich unsere ",
+        "ctaLink": "Autos",
+        "ctaEnd": " an und erfahren Sie mehr!"
+    },
+    "language": "Sprache"
+}
