@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'mixins';
+
+.home-container {
+    @include page-container;
+    justify-content: center; // Home specific centering
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin-bottom: 40px;
+        color: darken($text-color, 15%);
+        line-height: 1.6;
+    }
+
+    .highlight {
+        color: $primary-color;
+        font-weight: 700;
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    }
+
+    // Specific override for Home button if it feels too big
+    .button {
+        font-size: 14px; // Slightly smaller text
+        padding: 12px 32px; // Balanced padding
+        margin-top: 20px;
+    }
+}

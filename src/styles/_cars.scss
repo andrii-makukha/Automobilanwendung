@@ -2,52 +2,68 @@
 @import "mixins";
 
 .cars {
-  padding: 20px;
-  background-color: #1a1a1a;
-  color: $text-color;
+  @include page-container;
+  // Overwrite min-height from mixin if needed, or keep it
 }
 
 .car-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
+  width: 100%; // Ensure grid takes full width
+  max-width: 1200px !important; // Allow wider grid for cards
 }
 
 .car-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin: 10px;
-  padding: 15px;
+  background: $card-bg;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin: 0; // Removed margin in favor of gap in flex container
+  padding: 20px;
   text-align: center;
-  @include transition('transform 0.2s, box-shadow 0.2s');
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
 
   img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
-    opacity: 0; // Сховати поки завантажується
-    @include transition(opacity 0.5s ease-in-out); // Анімація появи
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
   }
 
   img.loaded {
-    opacity: 1; // Показати після завантаження
+    opacity: 1;
   }
 
   &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.3);
+
+    img {
+      transform: scale(1.03);
+    }
   }
 }
 
-.car-card h2 {
-  margin: 10px 0;
-  font-size: 1.5rem;
+.car-card h3 {
+  margin: 15px 0 10px;
+  font-family: $font-heading;
+  font-size: 1.4rem;
+  color: $text-heading;
+  letter-spacing: 0.5px;
 }
 
 .car-card p {
-  margin: 10px;
-  font-size: 1rem;
+  margin: 10px 0;
+  font-family: $font-primary;
+  font-size: 0.95rem;
+  color: darken($text-color, 10%);
+  line-height: 1.5;
 }

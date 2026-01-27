@@ -1,7 +1,13 @@
-$primary-color: #f39c12;
-$secondary-color: #f1c40f;
-$background-color: #121212;
-$text-color: #ffffff;
-$nav-background: #333;
-$nav-hover: #444;
-$active-color: #555;
+$primary-color: #D4AF37; // Premium Gold
+$secondary-color: #FFD700; // Lighter Gold for accents
+$background-color: #121212; // Deep Dark
+$card-bg: #1E1E1E; // Slightly lighter for cards
+$text-color: #EDEDED; // Soft White
+$text-heading: #FFFFFF; // Pure White for headings
+
+$font-primary: 'Roboto', sans-serif;
+$font-heading: 'Montserrat', sans-serif;
+
+$nav-background: rgba(18, 18, 18, 0.8); // Glass effect base
+$nav-hover: rgba(255, 215, 0, 0.1); // Gold tint on hover
+$active-color: #D4AF37;

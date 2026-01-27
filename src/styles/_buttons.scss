@@ -2,17 +2,32 @@
 @import "mixins";
 
 .button {
-  background-color: $primary-color;
-  color: $text-color;
+  background: linear-gradient(135deg, $primary-color, darken($primary-color, 10%)); // Gold Gradient
+  color: #121212; // Dark text
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+  border-radius: 50px; // Pill shape "pleasantly rounded"
+  padding: 12px 30px; // Comfortable padding
+  font-family: $font-heading; // Use heading font for buttons
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   cursor: pointer;
-  @include transition(background-color 0.3s);
-}
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); // Gold glow
+  @include transition(all 0.3s ease);
+  display: inline-block;
+  text-decoration: none; // Ensure links look like buttons
 
-.button:hover {
-  background-color: scale-color($primary-color, $lightness: 10%);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+    background: linear-gradient(135deg, lighten($primary-color, 5%), $primary-color);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+  }
 }
 
 .button.secondary {

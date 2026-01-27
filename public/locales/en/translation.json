@@ -1,22 +1,90 @@
 {
-    "navbar": {
+    "back": "Back to cars",
+    "specs": {
+        "price": "Price",
+        "speed": "Max Speed",
+        "acceleration": "0-100 km/h",
+        "engine": "Engine",
+        "power": "Power",
+        "units": {
+            "speed": "km/h",
+            "acceleration": "s",
+            "power": "hp"
+        }
+    },
+    "nav": {
         "home": "Home",
-        "about": "About",
+        "about": "About Us",
         "cars": "Cars",
         "contact": "Contact"
     },
     "home": {
-        "welcome": "Welcome to our car showroom!",
-        "intro1": "We are pleased to present our wide range of cars to suit your every need. From stylish city cars to powerful SUVs - we have it all!",
-        "intro2": "Our team of professionals is always ready to help you with your choice and provide all the necessary information so that you can make the best decision. Join us on a journey through the world of cars!",
-        "whyUs": "Why choose us?",
-        "reason1": "Large selection of cars for every taste and budget.",
-        "reason2": "Competitive prices and special offers.",
-        "reason3": "Professional advice and support at all stages of purchase.",
-        "reason4": "High quality customer service.",
-        "ctaStart": "Ready to find your perfect car? Check out our ",
-        "ctaLink": "cars",
-        "ctaEnd": " and find out more!"
+        "welcome": "Welcome to",
+        "title": "Automobile Application",
+        "description": "Your reliable partner in the world of cars.",
+        "button": "View Cars"
     },
-    "language": "Language"
+    "about": {
+        "title": "About Us",
+        "description": "We are a team of enthusiasts...",
+        "mission": "We are a team of car enthusiasts striving to provide you with the best car buying experience. Our mission is to help everyone find the perfect vehicle for their needs and budget.",
+        "offer": "Our dealership offers a wide range of new and used cars that undergo rigorous quality checks. We strictly cooperate with verified suppliers and manufacturers to ensure our customers get the best products on the market.",
+        "teamTitle": "Our Team",
+        "team": "Our team consists of experienced professionals ready to answer all your questions, provide professional advice, and help with your choice. We value every client and strive to ensure a high level of service at all buying stages.",
+        "whyUsTitle": "Why Choose Us?",
+        "whyUs": {
+            "1": "Wide range of cars.",
+            "2": "Competitive prices and great offers.",
+            "3": "Individual approach to every client.",
+            "4": "Quality and safety guarantee."
+        },
+        "thanks": "Thank you for choosing us! We hope you find your ideal car in our dealership. If you have questions, please",
+        "contactLink": "contact us"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "description": "Contact us for more information.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Send Message",
+            "success": "Your message has been sent successfully!"
+        },
+        "errors": {
+            "name": "Please enter your name",
+            "email": "Please enter your email",
+            "emailInvalid": "Please enter a valid email",
+            "message": "Please enter a message"
+        }
+    },
+    "cars": {
+        "title": "Our Cars",
+        "loading": "Loading...",
+        "error": "Error: {{message}}",
+        "search": "Search car brand...",
+        "noCars": "No cars found.",
+        "details": "Details",
+        "detailsAria": "Details about {{name}}"
+    },
+    "carDefaults": {
+        "tesla": "Electric sedan with impressive features.",
+        "bmw": "Sports car with impressive dynamic characteristics.",
+        "audi": "Luxury sedan with a high level of comfort and technology.",
+        "mercedes": "A symbol of luxury and innovation in the automotive world.",
+        "porsche": "Classic sports car with outstanding performance.",
+        "ford": "American classic sports car with a powerful engine.",
+        "lamborghini": "Supercar with incredible design and power.",
+        "ferrari": "Sports car with outstanding performance and design.",
+        "toyota": "Reliable sedan with comfort and efficiency.",
+        "honda": "Comfortable sedan with a high level of reliability.",
+        "chevrolet": "Supercar combining style and performance.",
+        "nissan": "Sports car with incredible speed and technology.",
+        "vw": "Practical hatchback combining style and functionality.",
+        "hyundai": "Comfortable and economical sedan for daily use.",
+        "kia": "Sports car with elegant design and high performance.",
+        "mazda": "Lightweight sports car providing excellent handling.",
+        "subaru": "Sports car with excellent off-road capability and powerful engine.",
+        "volvo": "Luxury SUV with high safety and comfort standards."
+    }
 }

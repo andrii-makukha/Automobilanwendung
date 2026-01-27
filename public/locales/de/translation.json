@@ -1,22 +1,89 @@
 {
-    "navbar": {
+    "back": "Zurück zu den Autos",
+    "specs": {
+        "price": "Preis",
+        "speed": "Höchstgeschwindigkeit",
+        "acceleration": "0-100 km/h",
+        "engine": "Motor",
+        "power": "Leistung",
+        "units": {
+            "speed": "km/h",
+            "acceleration": "s",
+            "power": "PS"
+        }
+    },
+    "nav": {
         "home": "Startseite",
         "about": "Über uns",
         "cars": "Autos",
         "contact": "Kontakt"
     },
     "home": {
-        "welcome": "Willkommen in unserem Autohaus!",
-        "intro1": "Wir freuen uns, Ihnen unser breites Angebot an Autos präsentieren zu können, das alle Ihre Bedürfnisse erfüllt. Von stilvollen Stadtautos bis hin zu leistungsstarken SUVs – wir haben alles!",
-        "intro2": "Unser Team von Profis ist immer bereit, Ihnen bei der Auswahl zu helfen und alle notwendigen Informationen bereitzustellen, damit Sie die beste Entscheidung treffen können. Begleiten Sie uns auf einer Reise durch die Welt der Autos!",
-        "whyUs": "Warum uns wählen?",
-        "reason1": "Große Auswahl an Autos für jeden Geschmack und jedes Budget.",
-        "reason2": "Wettbewerbsfähige Preise und Sonderangebote.",
-        "reason3": "Professionelle Beratung und Unterstützung in allen Phasen des Kaufs.",
-        "reason4": "Hohe Qualität des Kundenservice.",
-        "ctaStart": "Bereit, Ihr perfektes Auto zu finden? Schauen Sie sich unsere ",
-        "ctaLink": "Autos",
-        "ctaEnd": " an und erfahren Sie mehr!"
+        "welcome": "Willkommen bei",
+        "title": "Automobilanwendung",
+        "description": "Ihr zuverlässiger Partner in der Welt der Autos.",
+        "button": "Autos ansehen"
     },
-    "language": "Sprache"
+    "about": {
+        "title": "Über uns",
+        "mission": "Wir sind ein Team von Automobil-Enthusiasten, das Ihnen das beste Erlebnis beim Autokauf bieten möchte. Unsere Mission ist es, jedem zu helfen, das perfekte Fahrzeug zu finden.",
+        "offer": "Unser Autohaus bietet eine breite Palette an neuen und gebrauchten Autos, die strengen Qualitätsprüfungen unterzogen werden.",
+        "teamTitle": "Unser Team",
+        "team": "Unser Team besteht aus erfahrenen Fachleuten, die bereit sind, alle Ihre Fragen zu beantworten.",
+        "whyUsTitle": "Warum uns wählen?",
+        "whyUs": {
+            "1": "Große Auswahl an Autos.",
+            "2": "Wettbewerbsfähige Preise und tolle Angebote.",
+            "3": "Individueller Ansatz für jeden Kunden.",
+            "4": "Qualitäts- und Sicherheitsgarantie."
+        },
+        "thanks": "Danke, dass Sie uns gewählt haben! Wenn Sie Fragen haben, bitte",
+        "contactLink": "kontaktieren Sie uns"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "description": "Kontaktieren Sie uns für weitere Informationen.",
+        "form": {
+            "name": "Name",
+            "email": "E-Mail",
+            "message": "Nachricht",
+            "submit": "Nachricht senden",
+            "success": "Ihre Nachricht wurde erfolgreich gesendet!"
+        },
+        "errors": {
+            "name": "Bitte geben Sie Ihren Namen ein",
+            "email": "Bitte geben Sie Ihre E-Mail ein",
+            "emailInvalid": "Bitte geben Sie eine gültige E-Mail ein",
+            "message": "Bitte geben Sie eine Nachricht ein"
+        }
+    },
+    "cars": {
+        "title": "Unsere Autos",
+        "loading": "Laden...",
+        "error": "Fehler: {{message}}",
+        "search": "Automarke suchen...",
+        "noCars": "Keine Autos gefunden.",
+        "details": "Details",
+        "detailsAria": "Details über {{name}}"
+    },
+    "carDefaults": {
+        "tesla": "Elektrische Limousine mit beeindruckenden Eigenschaften.",
+        "bmw": "Sportwagen mit beeindruckender Dynamik.",
+        "audi": "Luxuslimousine mit hohem Komfort und Technologie.",
+        "mercedes": "Ein Symbol für Luxus und Innovation in der Automobilwelt.",
+        "porsche": "Klassischer Sportwagen mit herausragender Leistung.",
+        "ford": "Amerikanischer Klassiker mit starkem Motor.",
+        "lamborghini": "Supercar mit unglaublichem Design und Leistung.",
+        "ferrari": "Sportwagen mit herausragender Leistung und Design.",
+        "toyota": "Zuverlässige Limousine mit Komfort und Effizienz.",
+        "honda": "Komfortable Limousine mit hoher Zuverlässigkeit.",
+        "chevrolet": "Supercar, der Stil und Leistung vereint.",
+        "nissan": "Sportwagen mit unglaublicher Geschwindigkeit und Technologie.",
+        "vw": "Praktischer Fließheck, der Stil und Funktionalität vereint.",
+        "hyundai": "Komfortable und sparsame Limousine für den täglichen Gebrauch.",
+        "kia": "Sportwagen mit elegantem Design und hoher Leistung.",
+        "mazda": "Leichter Sportwagen mit exzellentem Handling.",
+        "subaru": "Sportwagen mit exzellenter Geländetauglichkeit und starkem Motor.",
+        "volvo": "Luxus-SUV mit hohen Sicherheits- und Komfortstandards."
+    }
 }

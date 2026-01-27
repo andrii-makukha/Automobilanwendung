@@ -1,3 +1,20 @@
 @mixin transition($properties) {
   transition: $properties;
 }
+
+@mixin page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px 20px;
+  text-align: center;
+  background-image: radial-gradient(circle at center, rgba(30, 30, 30, 0.5) 0%, rgba(18, 18, 18, 1) 100%);
+  color: $text-color;
+
+  // Ensure content max-width
+  >* {
+    max-width: 800px;
+    width: 100%;
+  }
+}

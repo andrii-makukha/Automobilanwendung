@@ -1,24 +1,44 @@
 @import 'variables';
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primary;
   background-color: $background-color;
   color: $text-color;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
   text-align: center;
-  color: $secondary-color;
+  color: $text-heading;
   animation: fadeIn 1s ease-in;
+  margin-bottom: 20px;
+
+  // Gold accent for primary headings
+  &.gradient-text {
+    background: linear-gradient(to right, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(10px);
   }
+
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }

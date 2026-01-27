@@ -1,0 +1,78 @@
+@import 'variables';
+@import 'mixins';
+
+/* contact.scss */
+
+/* Стилі для форми */
+.contact-container {
+  @include page-container;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block; // Ensure labels break line
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: $text-heading;
+  font-family: $font-heading;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  /* Dark input bg */
+  color: $text-color;
+  /* Light text */
+  font-size: 16px;
+  font-family: $font-primary;
+  transition: border-color 0.3s, background-color 0.3s;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Стилі для помилок */
+.input--error,
+.textarea--error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+/* Стиль для повідомлення про успіх */
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 20px;
+}

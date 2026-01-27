@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import classNames from 'classnames'; // Для умовних класів
+import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [errors, setErrors] = useState({});
     const [successMessage, setSuccessMessage] = useState('');
@@ -17,11 +19,11 @@ const Contact = () => {
     const validate = () => {
         const newErrors = {};
 
-        if (!formData.name) newErrors.name = 'Будь ласка, введіть ім’я';
-        if (!formData.email) newErrors.email = 'Будь ласка, введіть електронну пошту';
-        else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = 'Будь ласка, введіть правильну електронну пошту';
+        if (!formData.name) newErrors.name = t('contact.errors.name');
+        if (!formData.email) newErrors.email = t('contact.errors.email');
+        else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = t('contact.errors.emailInvalid');
 
-        if (!formData.message) newErrors.message = 'Будь ласка, введіть повідомлення';
+        if (!formData.message) newErrors.message = t('contact.errors.message');
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -30,9 +32,9 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
-            console.log('Форма відправлена:', formData);
-            setSuccessMessage('Ваше повідомлення надіслано успішно!');
-            setTimeout(() => setSuccessMessage(''), 3000); // Прибираємо повідомлення через 3 секунди
+            console.log('Form submitted:', formData);
+            setSuccessMessage(t('contact.form.success'));
+            setTimeout(() => setSuccessMessage(''), 3000);
             setFormData({ name: '', email: '', message: '' });
             setErrors({});
         }
@@ -40,11 +42,11 @@ const Contact = () => {
 
     return (
         <div className="contact-container">
-            <h1>Контакти</h1>
-            <p>Зв'яжіться з нами для отримання додаткової інформації.</p>
+            <h1>{t('contact.title')}</h1>
+            <p>{t('contact.description')}</p>
             <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-group">
-                    <label>Ім'я</label>
+                    <label>{t('contact.form.name')}</label>
                     <input
                         type="text"
                         name="name"
@@ -55,7 +57,7 @@ const Contact = () => {
                     {errors.name && <span className="error-message">{errors.name}</span>}
                 </div>
                 <div className="form-group">
-                    <label>Електронна пошта</label>
+                    <label>{t('contact.form.email')}</label>
                     <input
                         type="email"
                         name="email"
@@ -66,7 +68,7 @@ const Contact = () => {
                     {errors.email && <span className="error-message">{errors.email}</span>}
                 </div>
                 <div className="form-group">
-                    <label>Повідомлення</label>
+                    <label>{t('contact.form.message')}</label>
                     <textarea
                         name="message"
                         value={formData.message}
@@ -75,9 +77,9 @@ const Contact = () => {
                     ></textarea>
                     {errors.message && <span className="error-message">{errors.message}</span>}
                 </div>
-                <button type="submit" className="button">Написати нам</button>
+                <button type="submit" className="button">{t('contact.form.submit')}</button>
             </form>
-            {successMessage && <p className="success-message">{successMessage}</p>} {/* Показати повідомлення про успіх */}
+            {successMessage && <p className="success-message">{successMessage}</p>}
         </div>
     );
 };
